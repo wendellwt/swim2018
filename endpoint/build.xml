@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="CSSIfirst" default="dist" basedir=".">
+
+	<description>Build library for creating a Jumpstart Kit application</description>
+	<property environment="env" />
+
+	<property name="build" location="classes" />
+	<property name="source" location="src" />
+	<property name="lib" location="lib" />
+	<property name="activemq" location="lib/activemq" />
+	<property name="log" location="lib/log" />
+	<property name="solace" location="lib/solace" />
+	<property name="wls" location="lib/wls" />
+
+	<!-- property name="jarfile" location="${lib}/JumpstartKit.jar" / -->
+	<property name="jarfile" location="${lib}/CSSIfirst.jar" />
+
+	<target name="init" description="init">
+		<tstamp />
+		<mkdir dir="${build}" />
+	</target>
+
+	<target name="compile" depends="init" description="Compile source files">
+
+		<javac srcdir="${source}"
+			destdir="${build}"
+			classpath="."
+			extdirs="${lib}:${activemq}:${log}:${solace}:${wls}"
+			encoding="ISO-8859-1"
+			debug="true" />
+	</target>
+
+	<target name="dist"
+		depends="compile"
+		description="Generate distribution library">
+
+		<jar jarfile="${jarfile}" basedir="${build}" />
+	</target>
+
+</project>

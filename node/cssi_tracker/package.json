@@ -1,0 +1,28 @@
+{
+  "name": "cssi_tracker",
+  "version": "1.0.0",
+  "description": "first swim proj",
+  "main": "tracking.js",
+  "scripts": {
+    "test": "none",
+
+    "start": "parcel track.html",
+    "build": "parcel build --public-url . track.html"
+  },
+
+  "repository": {
+    "type": "git",
+    "url": "none"
+  },
+  "keywords": [
+    "swim"
+  ],
+  "author": "wendell",
+  "license": "ISC",
+  "dependencies": {
+    "ol": "^5.2.0"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.9.7"
+  }
+}

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <title>CSSI test map</title>
+  <link rel="icon" type="image/png" href="imgs/cssi_star.png" />
+
+<!-- The line below is only needed for old environments like Internet Explorer and Android 4.x -->
+<script
+src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL">
+</script>
+
+<link rel="stylesheet" href="https://openlayers.org/en/v5.2.0/css/ol.css" type="text/css">
+<link rel="stylesheet" href="css/wt-popup.css" type="text/css">
+
+<!-- this gets ajax to work (todo: ajax without jquery ?) -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+    <style>
+      .map {
+        height: 100%;
+        width:  100%;
+      }
+    </style>
+
+  </head>
+  <body>
+
+    <h2>CSSI Map</h2>
+    <div id="mapid" class="map"></div>
+
+    <!-- lifted from ol2 maps, now works with ol5 -->
+    <div id="popup" class="ol-popup">
+       <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+       <div id="popup-content"></div>
+    </div>
+
+    <script type="text/javascript" src="js/tracking.js"></script>
+
+  </body>
+</html>
+
+

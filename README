@@ -1,0 +1,52 @@
+
+next attempt at CSSI swim capabilities
+
+----- after checkout/clone retrieve and install these:
+
+1) JumpstartKit
+
+Harris JumpstartKit:
+    https://www.faa.gov/air_traffic/technology/swim/documents/media/
+    user-guide/JumpstartKit-5.1.1.zip
+
+unzip only lib parts:
+
+    unzip JumpstartKit-5.1.1.zip  'JumpstartKit-5.1.1/JumpstartKit/lib/*'
+
+then move to proper location:
+
+    mkdir blarf
+    mv JumpstartKit-5.1.1/JumpstartKit/lib/ blarf/
+
+2) Ant
+
+    https://ant.apache.org/bindownload.cgi
+
+install to ~/bin/ or ~/installs, and put that into $PATH
+todo: edit build.xml for lib/CSSIfirst.jar to be something better
+
+3) Node
+
+ol5 instructions:
+    https://openlayers.org/en/latest/doc/tutorials/bundle.html
+
+actual loc of node:
+    https://nodejs.org/en/
+
+note:  I think the:
+    npm init
+d/l's the entire package, so plan to do this accordingly
+
+    npm install ol
+
+4) Python
+
+must use Python3 _Windows_ / _DOS_ version
+
+pip3.x install psycopg2
+pip3.x install cherrypy
+pip3.x install psutil
+
+pip3.x install subprocess
+pip3.x install pytz
+
