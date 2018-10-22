@@ -1,5 +1,5 @@
 
-# this has been cloded with
+# this has been cloned with
 #    git clone https://github.com/wendellwt/swim2018.git
 
 #  /cygdrive/c/Users/wturner/Python37/python.exe  manage.py
