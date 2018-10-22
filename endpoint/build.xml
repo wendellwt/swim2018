@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<project name="CSSIfirst" default="dist" basedir=".">
+<project name="CSSIendpoint" default="dist" basedir=".">
 
 	<description>Build library for creating a Jumpstart Kit application</description>
 	<property environment="env" />
@@ -14,7 +14,7 @@
 	<property name="wls" location="lib/wls" />
 
 	<!-- property name="jarfile" location="${lib}/JumpstartKit.jar" / -->
-	<property name="jarfile" location="${lib}/CSSIfirst.jar" />
+	<property name="jarfile" location="${lib}/CSSIendpoint.jar" />
 
 	<target name="init" description="init">
 		<tstamp />
