@@ -1,4 +1,7 @@
 
+# this has been cloded with
+#    git clone https://github.com/wendellwt/swim2018.git
+
 #  /cygdrive/c/Users/wturner/Python37/python.exe  manage.py
 
 # run this on asdi and check if java swim pgm and
