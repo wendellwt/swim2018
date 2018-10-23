@@ -256,7 +256,7 @@ while(1):
     print("k <pid> == kill pid")
     print("p == start cherry py server")
     print("w == start swim/java")
-    print("d == count db tables")
+    print("c == count db tables")
 
     inp = input('Enter input: ')
     c = inp[0]
@@ -295,6 +295,6 @@ while(1):
         start_swim()
 
     # ----- count db
-    if c == 'd':
+    if c == 'c':
         query_db( )
 

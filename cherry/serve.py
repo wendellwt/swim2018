@@ -72,6 +72,7 @@ class Root(object):
 
         gjson = get_tracks.ajax( db_csr, "stdds", apt )
 
+        print("ajax: return" )
         return gjson
     get_tracks_ajax.exposed = True    # does this duplicate the @ decorator
 
