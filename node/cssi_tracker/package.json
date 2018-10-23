@@ -5,11 +5,9 @@
   "main": "tracking.js",
   "scripts": {
     "test": "none",
-
     "start": "parcel track.html",
     "build": "parcel build --public-url . track.html"
   },
-
   "repository": {
     "type": "git",
     "url": "none"
